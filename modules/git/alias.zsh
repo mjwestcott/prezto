@@ -14,7 +14,9 @@
 zstyle -s ':prezto:module:git:log:medium' format '_git_log_medium_format' \
   || _git_log_medium_format='%C(bold)Commit:%C(reset) %C(yellow)%H%C(red)%d%n%C(bold)Author:%C(reset) %C(green)%an <%ae>%n%C(bold)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B'
 zstyle -s ':prezto:module:git:log:oneline' format '_git_log_oneline_format' \
-  || _git_log_oneline_format='%C(yellow)%h%C(reset) %s%C(red)%d%C(reset)%n'
+  || _git_log_oneline_format='%C(yellow)%h%C(reset) %s%C(red)%d%C(reset)'
+zstyle -s ':prezto:module:git:log:graph' format '_git_log_graph_format' \
+  || _git_log_graph_format='%C(yellow)%h%C(reset) %s%C(red)%d%C(reset)%n'
 zstyle -s ':prezto:module:git:log:brief' format '_git_log_brief_format' \
   || _git_log_brief_format='%C(yellow)%h%C(reset) %s%n%C(blue)(%ar by %an)%C(red)%d%C(reset)%n'
 
@@ -179,7 +181,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gls='git log --topo-order --stat --pretty=format:"${_git_log_medium_format}"'
   alias gld='git log --topo-order --stat --patch --full-diff --pretty=format:"${_git_log_medium_format}"'
   alias glo='git log --topo-order --pretty=format:"${_git_log_oneline_format}"'
-  alias glg='git log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"'
+  alias glg='git log --topo-order --all --graph --pretty=format:"${_git_log_graph_format}"'
   alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
   alias glc='git shortlog --summary --numbered'
 
