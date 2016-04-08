@@ -14,7 +14,7 @@
 zstyle -s ':prezto:module:git:log:medium' format '_git_log_medium_format' \
   || _git_log_medium_format='%C(bold)Commit:%C(reset) %C(yellow)%H%C(red)%d%n%C(bold)Author:%C(reset) %C(green)%an <%ae>%n%C(bold)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B'
 zstyle -s ':prezto:module:git:log:oneline' format '_git_log_oneline_format' \
-  || _git_log_oneline_format='%C(yellow)%h %C(green)%an%C(reset) %s%C(red)%d%C(reset)'
+  || _git_log_oneline_format='%C(yellow)%h %C(green)%an %C(blue)%ar%C(reset) %s%C(red)%d%C(reset)'
 zstyle -s ':prezto:module:git:log:graph' format '_git_log_graph_format' \
   || _git_log_graph_format='%C(yellow)%h %C(green)%an%C(reset) %s%C(red)%d%C(reset)%n'
 zstyle -s ':prezto:module:git:log:brief' format '_git_log_brief_format' \
