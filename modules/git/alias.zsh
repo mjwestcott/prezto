@@ -66,6 +66,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gcR='git reset "HEAD^"'
   alias gcs='git show'
   alias gcl='git-commit-lost'
+  alias gcom='git checkout master'
 
   # Conflict (C)
   alias gCl='git --no-pager diff --name-only --diff-filter=U'
@@ -208,6 +209,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias grc='git rebase --continue'
   alias gri='git rebase --interactive'
   alias grs='git rebase --skip'
+  alias grom='git fetch origin && git rebase origin master'
 
   # Remote (R)
   alias gR='git remote'
