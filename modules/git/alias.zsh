@@ -211,7 +211,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias grc='git rebase --continue'
   alias gri='git rebase --interactive'
   alias grs='git rebase --skip'
-  alias grom='git fetch origin && git rebase origin master'
+  alias grom='git fetch origin && git rebase origin/master'
 
   # Remote (R)
   alias gR='git remote'
