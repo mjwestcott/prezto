@@ -70,6 +70,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gcr='git revert'
   alias gcR='git reset "HEAD^"'
   alias gcs='git show'
+  alias gcsS='git show --pretty=short --show-signature'
   alias gcl='git-commit-lost'
   alias gcom='git checkout master'
   alias gcy='git cherry -v --abbrev'
@@ -261,6 +262,8 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   # Tag (t)
   alias gt='git tag'
   alias gtl='git tag -l'
+  alias gts='git tag -s'
+  alias gtv='git verify-tag'
 
   # Working Copy (w)
   alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
